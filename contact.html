@@ -27,39 +27,12 @@
   <p>If you would like to get in touch, feel free to use any of the options below:</p>
 
   <div class="contact-info">
-    <p><i class="fas fa-phone"></i> +91 7592920401</p>
     <p><i class="fas fa-envelope"></i> shanaparveenkt1@gmail.com</p>
     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shanaparveenkt" target="_blank">My LinkedIn</a></p>
     <p><i class="fab fa-github"></i> <a href="https://github.com/shanaparveenkt" target="_blank">My GitHub</a></p>
   </div>
 
-  <h2>Send a Message</h2>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</main>
 
-<script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form)).toString(),
-    })
-    .then(() => {
-      form.innerHTML = "<p style='text-align:center;color:green;font-weight:bold;'>✅ Thank you for your message! I’ll get back to you soon.</p>";
-    })
-    .catch(() => {
-      alert("Oops! Something went wrong. Please try again.");
-    });
-  });
-</script>
 
 
 <footer>
@@ -74,6 +47,7 @@
 
 </body>
 </html>
+
 
 
 
