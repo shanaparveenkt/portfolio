@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,148 +6,19 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* About Cards */
-.about-card {
-  width: 100%;
-  max-width: 600px;
-  background: linear-gradient(145deg, #fff1f0, #ffe4e1); /* rose gold gradient */
-  border-radius: 20px;
-  padding: 25px 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  margin: 20px auto; /* center cards */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-}
-
-.about-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-}
-
-/* Icon Circle */
-.icon-circle {
-  display: inline-block;
-  background-color: #f7a1a3; /* light rose gold */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  margin-bottom: 15px;
-  color: #b76e79; /* dark rose gold icon */
-  font-size: 24px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-.icon-circle:hover {
-  transform: scale(1.2);
-  background-color: #b76e79;
-  color: #fff1f0;
-}
-
-/* About Card Heading */
-.about-card h3 {
-  font-size: 22px;
-  color: #b76e79;
-  margin-bottom: 10px;
-}
-
-/* About Card Paragraph */
-.about-card p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #3b2f2f;
-}
-
-/* Links in About Cards */
-.about-card a {
-  color: #f7a1a3;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.about-card a:hover {
-  color: #b76e79;
-}
-
-
-/* About Cards */
-.about-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.about-card {
-  background: linear-gradient(145deg, #fff1f0, #ffe4e1); /* rose gold gradient */
-  border-radius: 20px;
-  padding: 25px 20px;
-  width: 600px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-}
-
-.icon-circle {
-  display: inline-block;
-  background-color: #f7a1a3; /* light rose gold */
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  margin-bottom: 15px;
-  color: #b76e79; /* dark rose gold icon */
-  font-size: 24px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-.icon-circle:hover {
-  transform: scale(1.2);
-  background-color: #b76e79;
-  color: #fff1f0;
-}
-
-.about-card h3 {
-  font-size: 22px;
-  color: #b76e79;
-  margin-bottom: 10px;
-}
-
-.about-card p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #3b2f2f;
-}
-
-.about-card a {
-  color: #f7a1a3;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.about-card a:hover {
-  color: #b76e79;
-}
-
-/* Body */
+/* Body styles */
 body {
-  background-color: #fff1f0; /* very light rose gold */
-  color: #3b2f2f; /* dark rose/brown text */
-  text-align: center; /* center everything */
+  background-color: #fff1f0; /* very light rose gold background */
+  color: #3b2f2f;            /* dark text */
+  text-align: center;         /* center text by default */
 }
 
-/* Header */
+/* Header styles */
 header {
   padding: 20px 0;
   text-align: center;
-  background-color: #b76e79; /* rose gold for main heading */
-  color: #fff; /* white text on rose gold */
+  background-color: #b76e79; /* rose gold header */
+  color: #fff;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -169,160 +40,88 @@ header nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
-  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #f7a1a3; /* lighter rose gold on hover */
+  color: #f7a1a3;
 }
 
-/* Profile Section */
-.profile-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 20px auto;
-  border: 5px solid #f7a1a3; /* lighter rose gold border */
+/* About cards container */
+.about-cards {
+  display: flex;           /* arrange cards in a row */
+  flex-wrap: wrap;         /* allow wrapping to next row */
+  justify-content: center; /* center all cards */
+  gap: 25px;               /* space between cards */
+  margin: 30px 0;
 }
 
-h1 {
-  font-size: 32px;
-  margin: 15px 0;
-  color: #b76e79; /* dark rose gold */
-  background-color: #fff1f0; /* optional subtle contrast */
-  padding: 5px 0;
-}
-
-h2 {
-  font-size: 24px;
-  margin: 10px 0;
-  color: #f7a1a3; /* light rose gold */
-}
-
-p {
-  font-size: 18px;
+/* Individual About Card */
+.about-card {
+  width: 100%;              /* full width on small screens */
+  max-width: 600px;         /* maximum width on large screens */
+  background: linear-gradient(145deg, #fff1f0, #ffe4e1); /* rose gold gradient */
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 10px auto;
-  max-width: 700px;
-  line-height: 1.6;
-  color: #3b2f2f;
 }
 
-/* Hire Me Button */
-.hire-btn {
+/* Hover effect for cards */
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Icon circle at top of card */
+.icon-circle {
   display: inline-block;
-  padding: 12px 35px;
-  margin: 20px 0;
-  background-color: #f7a1a3; /* light rose gold button */
-  color: #3b2f2f;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+  background-color: #f7a1a3; /* light rose gold */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 15px;
+  color: #b76e79;
+  font-size: 24px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.hire-btn:hover {
-  background-color: #b76e79; /* dark rose gold hover */
-  color: #fff;
-  transform: scale(1.05);
-}
-
-/* Emblems */
-.emblems {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.emblem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f7a1a333; /* transparent rose gold */
-  padding: 15px 25px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 120px;
-}
-
-.emblem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-}
-
-.emblem p {
-  margin-top: 8px;
-  font-size: 16px;
-  color: #b76e79; /* dark rose gold text */
-}
-
-/* Projects Section */
-.project {
-  background-color: #fff1f0;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #b76e79; /* dark rose gold links */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.project a:hover {
-  color: #f7a1a3; /* light rose gold on hover */
-}
-
-/* Contact Form */
-form {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 15px;
-  border: 1px solid #b76e79;
-}
-
-button {
-  padding: 12px;
-  font-size: 18px;
-  background-color: #f7a1a3;
-  color: #3b2f2f;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
+.icon-circle:hover {
+  transform: scale(1.2);
   background-color: #b76e79;
-  color: #fff;
-  transform: scale(1.05);
+  color: #fff1f0;
+}
+
+/* Card headings */
+.about-card h3 {
+  font-size: 22px;
+  color: #b76e79;
+  margin-bottom: 10px;
+}
+
+/* Card paragraph text */
+.about-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3b2f2f;
+}
+
+/* Links inside cards */
+.about-card a {
+  color: #f7a1a3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-card a:hover {
+  color: #b76e79;
 }
 
 /* Footer */
 footer {
-  background-color: #b76e79; /* same as main heading */
+  background-color: #b76e79;
   color: #fff;
   text-align: center;
   padding: 25px 0;
@@ -339,3 +138,36 @@ footer {
 .footer-icons a:hover {
   color: #f7a1a3;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column; /* stack cards vertically */
+    gap: 15px;
+  }
+
+  .about-card {
+    padding: 20px 15px;
+  }
+
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .about-card h3 {
+    font-size: 20px;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
