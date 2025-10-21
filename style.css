@@ -340,6 +340,28 @@ footer {
   color: #f7a1a3;
 }
 
+/* Adjust About cards for smaller screens */
+@media (max-width: 768px) {
+  .about-card {
+    width: 90%;      /* reduce card width on mobile */
+    padding: 20px;   /* adjust padding */
+  }
+
+  .icon-circle {
+    width: 50px;     /* smaller icons */
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .about-card h3 {
+    font-size: 20px; /* slightly smaller headings */
+  }
+
+  .about-card p {
+    font-size: 14px; /* slightly smaller text */
+  }
+}
 
 
 
