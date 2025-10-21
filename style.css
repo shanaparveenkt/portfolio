@@ -340,36 +340,6 @@ footer {
   color: #f7a1a3;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .about-cards {
-    flex-direction: column; /* stack cards vertically */
-    gap: 15px;
-  }
 
-  .about-card {
-    padding: 20px 15px;
-  }
-
-  .icon-circle {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-  }
-
-  .about-card h3 {
-    font-size: 20px;
-  }
-
-  .about-card p {
-    font-size: 14px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
 
 
