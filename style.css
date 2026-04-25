@@ -300,3 +300,38 @@ body {
 main {
   flex: 1;
 }
+
+
+/* HERO CONTAINER */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* IMAGE SIDE */
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* BIGGER IMAGE */
+.profile-photo {
+  width: 240px;   /* increased size */
+  height: 240px;
+}
+
+/* TEXT SIDE */
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* BUTTON ALIGN */
+.hero-buttons {
+  margin-top: 20px;
+}
