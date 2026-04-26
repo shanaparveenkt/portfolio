@@ -335,3 +335,38 @@ main {
 .hero-buttons {
   margin-top: 20px;
 }
+
+.tech-stack {
+  margin: 10px 0;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: linear-gradient(135deg, #6c63ff, #00c9a7);
+  color: white;
+  padding: 5px 10px;
+  margin: 4px 4px 0 0;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #6c63ff;
+}
