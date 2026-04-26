@@ -4,33 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shana Parveen KT - Home</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
 
-<script>
-  function revealOnScroll() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    for (let i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
-      let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 100;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      }
-    }
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  window.addEventListener("load", revealOnScroll);
-</script>
-  
+<!-- HEADER -->
 <header>
   <div class="header-name reveal">Shana Parveen KT</div>
+
   <nav>
     <ul>
       <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
@@ -42,78 +27,126 @@
   </nav>
 </header>
 
+
+<!-- HERO SECTION (REDESIGNED) -->
 <main class="hero-section">
 
-  <img src="profile.jpeg.jpeg" alt="Shana Parveen KT" class="profile-photo">
-
-  <h1>Hi, I'm Shana Parveen KT</h1>
-
-  <h2 class="hero-role">
-  <span id="typing"></span>
-</h2>
-
-  <p class="hero-summary">
-    I build data-driven solutions using <strong>Python and SQL</strong>, with hands-on experience in 
-    <strong>Machine Learning, Natural Language Processing, and Computer Vision</strong>. 
-    I specialize in developing real-world projects including predictive models, AI applications, 
-    and data analysis systems.
-  </p>
-
-  
-
-  <!-- Skills Highlights -->
-  <div class="emblems">
-
-    <div class="emblem">
-      <i class="fab fa-python"></i>
-      <p>Python & SQL</p>
-    </div>
-
-    <div class="emblem">
-      <i class="fas fa-chart-line"></i>
-      <p>Data Analysis</p>
-    </div>
-
-    <div class="emblem">
-      <i class="fas fa-brain"></i>
-      <p>Machine Learning</p>
-    </div>
-
-    <div class="emblem">
-      <i class="fas fa-robot"></i>
-      <p>AI & NLP</p>
-    </div>
-
-    <div class="emblem">
-      <i class="fas fa-robot"></i>
-      <p>Deep Learning & Computer Vision</p>
-    </div>
-
-    <div class="emblem">
-      <i class="fas fa-robot"></i>
-      <p>Big Data (Hadoop & Spark)</p>
-    </div>
+  <!-- LEFT SIDE IMAGE -->
+  <div class="hero-left">
+    <img src="profile.jpeg.jpeg" alt="Shana Parveen KT" class="profile-photo">
   </div>
 
+
+  <!-- RIGHT SIDE CONTENT -->
+  <div class="hero-right">
+
+    <h1>Hi, I'm Shana Parveen KT</h1>
+
+    <h2 class="hero-role">
+      <span id="typing"></span>
+    </h2>
+
+    <!-- STRONG POSITIONING LINE -->
+    <p class="hero-tagline">
+      Aspiring Data Analyst passionate about turning raw data into meaningful insights using Python, Machine Learning, and AI.
+    </p>
+
+    <!-- SHORT DESCRIPTION -->
+    <p class="hero-summary">
+      I build data-driven solutions using Python and SQL, with hands-on experience in Machine Learning, 
+      Natural Language Processing, and Computer Vision. I enjoy solving real-world problems through data analysis and predictive modeling.
+    </p>
+
+    <!-- CTA BUTTONS -->
+    <div class="hero-buttons">
+      <a href="projects.html" class="btn primary">View Projects</a>
+      <a href="resume.html" class="btn secondary">View Resume</a>
+    </div>
+
+  </div>
 </main>
-  
+
+
+<!-- STATS SECTION -->
+<section class="stats">
+
+  <div class="stat">
+    <h3>10+</h3>
+    <p>Projects</p>
+  </div>
+
+  <div class="stat">
+    <h3>Python</h3>
+    <p>Core Skill</p>
+  </div>
+
+  <div class="stat">
+    <h3>ML</h3>
+    <p>Models Built</p>
+  </div>
+
+  <div class="stat">
+    <h3>EDA</h3>
+    <p>Data Analysis</p>
+  </div>
+
+</section>
+
+
+<!-- SKILLS SECTION (IMPROVED) -->
+<section class="emblems">
+
+  <div class="emblem">
+    <i class="fab fa-python"></i>
+    <p>Python & SQL</p>
+  </div>
+
+  <div class="emblem">
+    <i class="fas fa-chart-line"></i>
+    <p>Data Analysis</p>
+  </div>
+
+  <div class="emblem">
+    <i class="fas fa-brain"></i>
+    <p>Machine Learning</p>
+  </div>
+
+  <div class="emblem">
+    <i class="fas fa-robot"></i>
+    <p>AI & NLP</p>
+  </div>
+
+  <div class="emblem">
+    <i class="fas fa-eye"></i>
+    <p>Computer Vision</p>
+  </div>
+
+</section>
+
+
+<!-- TYPING SCRIPT -->
 <script>
   var typed = new Typed("#typing", {
     strings: [
-      "Data Analyst | Machine Learning Enthusiast | AI &amp; NLP Developer | Computer Vision Learner"
+      "Data Analyst",
+      "Machine Learning Enthusiast",
+      "AI & NLP Developer",
+      "Computer Vision Learner"
     ],
-    typeSpeed: 50,
-    showCursor: true,
-    loop: false
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
   });
 </script>
 
 
+<!-- FOOTER -->
 <footer>
   <p>&copy; 2025 Shana Parveen KT | Data Analyst | Machine Learning Enthusiast</p>
+
   <div class="footer-icons">
     <a href="mailto:shanaparveenkt1@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a ><i class="fas fa-phone"></i></a>
+    <a href="#"><i class="fas fa-phone"></i></a>
     <a href="https://www.linkedin.com/in/shanaparveenkt" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/shanaparveenkt" target="_blank"><i class="fab fa-github"></i></a>
   </div>
@@ -121,12 +154,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
